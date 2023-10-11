@@ -18,9 +18,9 @@ export default function Content() {
           Characters
         </h1>
         <h2 className="animate-fade-up text-xl font-medium animate-delay-[1000ms] animate-ease-in-out sm:text-2xl">
-          They are more than just living in your head.
+          More than just living in your head.
         </h2>
-        <h3 className="animate-fade-up px-8 animate-delay-[1000ms] animate-ease-in-out text-sm sm:text-base">
+        <h3 className="animate-fade-up px-8 text-sm animate-delay-[1000ms] animate-ease-in-out sm:text-base">
           Wanna talk to Gordon Freeman? I wish he could talk too.
           <br />
           How about creating a Gordon who can actually talk while he swings his
