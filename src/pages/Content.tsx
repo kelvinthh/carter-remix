@@ -79,16 +79,23 @@ export default function Content() {
 
       {/* Highlight */}
       <div className="flex w-full animate-fade-up flex-col items-center bg-indigo-950/50 pt-8 text-center animate-delay-[800ms] animate-duration-1000 animate-ease-in-out">
-        <h1 className="text-3xl font-bold">Characters Highlights</h1>
-        <h2 className="font-light">
-          Here are some of the best characters.
+        <h1 className="text-3xl font-bold">
+          Fantasies, Immersions, All Yours.
+        </h1>
+        {/* <h2 className='text-xl font-medium'>Characters Highlight</h2> */}
+        <h3 className="text-sm font-light sm:text-base">
+          Check out some of our best characters!
           <br />
           From us, and the community.
-        </h2>
+        </h3>
         <div className="flex min-h-[18rem] w-full flex-col items-center justify-center gap-8 py-8 sm:my-0 sm:flex-row">
           <HighlightIcon
             name="Gordon Freeman"
             imageUrl="https://combineoverwiki.net/images/thumb/2/2b/Gordon_bust_rtb2.jpg/250px-Gordon_bust_rtb2.jpg"
+          />
+          <HighlightIcon
+            name="Chicken at cs_italy"
+            imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDsjyVfzGc3TZqs3kUHKyufOndE_YD6LeHg&usqp=CAU"
           />
           <HighlightIcon
             name="The G-Man"
@@ -97,6 +104,10 @@ export default function Content() {
           <HighlightIcon
             name="Alyx Vance"
             imageUrl="https://combineoverwiki.net/images/thumb/f/f5/Alyx_Vance_Portrait.jpg/448px-Alyx_Vance_Portrait.jpg"
+          />
+          <HighlightIcon
+            name="Russel"
+            imageUrl="https://steamuserimages-a.akamaihd.net/ugc/1616185636263315058/993C7910CE3D2284FA9A16375B34178D8954E9D3/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
           />
         </div>
       </div>
