@@ -1,9 +1,11 @@
 import Header from "./components/Header";
+import Content from "./pages/Content";
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-row bg-red-400">
+    <div className="h-full min-h-screen flex flex-row">
       <Header />
+      <Content />
     </div>
   );
 }
