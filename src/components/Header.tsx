@@ -16,7 +16,7 @@ export default function Header() {
       <div className="flex-grow bg-white" />
       {/* Bottom buttons */}
       <div className="flex animate-fade-right flex-col items-center space-y-4 animate-delay-700 animate-ease-in-out">
-        <button className="flex animate-bounce items-center justify-center rounded-lg bg-white p-2">
+        <button className="flex animate-wiggle-more animate-infinite items-center justify-center rounded-lg bg-white p-2">
           <span className="bg-gradient-to-r from-blue-500 from-30% via-green-500 to-cyan-500 bg-clip-text text-xs font-bold text-transparent sm:text-base">
             Get Pro
           </span>
