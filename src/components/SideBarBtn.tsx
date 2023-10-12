@@ -15,7 +15,7 @@ export default function SideBarBtn({
     <a
       href={url}
       title={title}
-      className="flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:sm:scale-150 hover:animate-pulse hover:animate-duration-[500ms] gap-1"
+      className="flex flex-col items-center justify-center gap-1 transition-all duration-300 ease-in-out hover:text-yellow-500 hover:sm:scale-150"
     >
       {children}
     </a>

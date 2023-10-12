@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { AiOutlineToTop } from "react-icons/ai";
+import { IoMdAlbums, IoMdBonfire } from "react-icons/io";
 import HighlightIcon from "../components/HighlightIcon";
+import ImageListBtn from "../components/ImageListBtn";
 
 export default function Content() {
   const [scrollButton, setScrollButton] = useState(false);
@@ -78,7 +80,7 @@ export default function Content() {
       </div>
 
       {/* Highlight */}
-      <div className="flex w-full animate-fade-up flex-col items-center bg-indigo-950/50 pt-8 text-center animate-delay-[800ms] animate-duration-1000 animate-ease-in-out">
+      <div className="flex w-full animate-fade-up flex-col items-center bg-indigo-950/40 pt-8 text-center animate-delay-[800ms] animate-duration-1000 animate-ease-in-out">
         <h1 className="text-3xl font-bold">
           Fantasies, Immersions, All Yours.
         </h1>
@@ -112,53 +114,23 @@ export default function Content() {
         </div>
       </div>
 
-      {/* List */}
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
+      {/* Image List */}
+      <div className="flex w-full flex-col items-center justify-center space-y-4 py-12 animate-fade-up animate-duration-700 animate-delay-[1300ms]">
+        <div className="flex flex-col space-y-2 text-center">
+          <h1 className="text-3xl font-bold">Try It Out Now.</h1>
+          <h3 className="text-sm font-light sm:text-base">
+            Chat, Laugh, Enjoy 🔥
+          </h3>
+        </div>
+        {/* Buttons */}
+        <div className="flex min-h-[4rem] w-full flex-wrap items-center justify-center gap-x-2 gap-y-2 px-4 sm:gap-x-4">
+          {/* <ImageListBtn title="Create" icon={IoIosAdd} /> */}
+          <ImageListBtn title="Community Feed" icon={IoMdAlbums} />
+          <ImageListBtn title="Rising" icon={IoMdBonfire} />
+          <ImageListBtn title="Male" />
+          <ImageListBtn title="Female" />
+        </div>
+      </div>
     </div>
   );
 }

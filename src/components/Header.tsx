@@ -37,7 +37,7 @@ export default function Header() {
         <SideBarBtn title="Play">
           <BiGame size="1.75em" />
           {/* 'SOON' is hidden on small screen */}
-          <p className="hidden whitespace-nowrap rounded-full bg-violet-700 px-1 text-xs sm:flex">
+          <p className="hidden whitespace-nowrap rounded-full bg-violet-700 px-1 text-xs text-white sm:flex">
             SOON
           </p>
         </SideBarBtn>
@@ -49,7 +49,7 @@ export default function Header() {
       {/* Bottom buttons */}
       <div className="flex animate-fade-right flex-row items-center space-x-4 animate-delay-700 animate-ease-in-out sm:flex-col sm:space-x-0 sm:space-y-8">
         {/* Get Pro Button */}
-        <button className="flex animate-pulse items-center justify-center rounded-lg bg-white p-2 sm:animate-wiggle-more sm:animate-infinite">
+        <button className="flex animate-pulse items-center justify-center rounded-full bg-white py-1 px-2 sm:animate-wiggle-more sm:animate-infinite">
           <span className="bg-gradient-to-r from-blue-500 from-30% via-green-500 to-cyan-500 bg-clip-text text-xs font-bold text-transparent sm:text-base">
             Get Pro
           </span>
