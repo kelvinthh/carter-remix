@@ -5,7 +5,7 @@ interface ImageListBtnProps {
   icon?: IconType;
 }
 
-export default function ImageListBtn({
+export default function CharListBtn({
   title,
   icon: Icon,
 }: ImageListBtnProps): JSX.Element {

@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { AiOutlineToTop } from "react-icons/ai";
-import { IoMdAlbums, IoMdBonfire } from "react-icons/io";
+import { IoIosAdd, IoMdAlbums, IoMdBonfire } from "react-icons/io";
 import HighlightIcon from "../components/HighlightIcon";
-import ImageListBtn from "../components/ImageListBtn";
+import CharListBtn from "../components/CharListBtn";
 import CharacterList from "../components/CharacterList";
+import { BiLogoDiscord, BiLogoTiktok, BiLogoYoutube } from "react-icons/bi";
 
 export default function Content() {
   const [scrollButton, setScrollButton] = useState(false);
@@ -35,12 +36,12 @@ export default function Content() {
 
   return (
     <div
-      className="flex h-screen w-full animate-fade flex-col items-center overflow-y-auto bg-black pb-16 text-white animate-delay-500"
+      className="flex h-screen w-full animate-fade flex-col items-center overflow-y-auto bg-black text-white animate-delay-500"
       ref={containerRef}
     >
       {/* Scroll to top button */}
       <button
-        className={`fixed bottom-8 right-8 z-50 animate-fade rounded-full bg-violet-700 p-4 opacity-70 drop-shadow transition-all duration-500 hover:scale-110 hover:opacity-100 sm:bottom-16 ${
+        className={`absolute bottom-8 right-8 z-20 animate-fade rounded-full bg-violet-700 p-4 opacity-50 drop-shadow transition-all duration-500 animate-fill-backwards hover:scale-110 hover:opacity-100 sm:bottom-16 ${
           !scrollButton && `hidden cursor-default`
         }`}
         onClick={() => {
@@ -126,16 +127,42 @@ export default function Content() {
 
         {/* Buttons */}
         <div className="flex min-h-[4rem] w-full flex-wrap items-center justify-center gap-x-2 gap-y-2 px-4 sm:gap-x-4">
-          {/* <ImageListBtn title="Create" icon={IoIosAdd} /> */}
-          <ImageListBtn title="Community Feed" icon={IoMdAlbums} />
-          <ImageListBtn title="Rising" icon={IoMdBonfire} />
-          <ImageListBtn title="Male" />
-          <ImageListBtn title="Female" />
+          <CharListBtn title="Create" icon={IoIosAdd} />
+          <CharListBtn title="Community Feed" icon={IoMdAlbums} />
+          <CharListBtn title="Rising" icon={IoMdBonfire} />
+          <CharListBtn title="Male" />
+          <CharListBtn title="Female" />
         </div>
 
-        {/* The List */}
+        {/* The Actual List */}
         <CharacterList />
       </div>
+
+      {/* Footer */}
+      <footer className="flex w-full flex-col pb-8">
+        <div className="mx-6 mb-8 h-[1px] bg-slate-600" />
+
+        <div className="flex items-center justify-between px-8">
+          <img
+            src="https://www.carter.chat/assets/cartericon-2501c522.png"
+            className="h-10 w-10"
+          />
+          <a className="text-sm font-light text-slate-600 hover:underline">
+            Legal Text
+          </a>
+          <div className="flex items-center space-x-2">
+            <button>
+              <BiLogoDiscord size="1.5em" />
+            </button>
+            <button>
+              <BiLogoTiktok size="1.5em" />
+            </button>
+            <button>
+              <BiLogoYoutube size="1.5em" />
+            </button>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

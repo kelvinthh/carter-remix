@@ -14,19 +14,19 @@ export default function CharacterList() {
   const [imageUrls, setImageUrls] = useState<string[]>([]);
   useEffect(() => {
     const urls = Array.from({ length: 20 }).map((_, index) => {
-      const width = Math.floor(Math.random() * 200) + 600;
-      const height = Math.floor(Math.random() * 200) + 800;
+      const width = Math.floor(Math.random() * 200) + 600; // Random width from 600 - 800
+      const height = Math.floor(Math.random() * 200) + 800; // Random height from 800 - 1000
       return `https://picsum.photos/${width}/${height}?random=${index + 1}`;
     });
     setImageUrls(urls);
   }, []);
 
   return (
-    <div className="h-auto w-full columns-1 items-center justify-center gap-4 space-y-4 px-8 sm:columns-2 lg:columns-3 xl:columns-4">
+    <div className="w-full columns-1 items-center justify-center gap-4 space-y-4 px-8 sm:columns-2 lg:columns-3 xl:columns-4">
       {imageUrls.map((url, index) => (
         <div
           key={index}
-          className="group relative overflow-hidden rounded-2xl transition-all ease-in-out hover:-translate-y-1 hover:scale-105"
+          className="group relative overflow-hidden rounded-2xl transition-all duration-500 ease-in-out hover:z-20 hover:-translate-y-1 hover:scale-[1.025]"
         >
           <div className="absolute bottom-0 hidden w-full flex-col items-start justify-center space-y-1 bg-black bg-opacity-70 px-2 py-4 group-hover:flex group-hover:animate-fade">
             <p className="text-lg font-bold">Character Name</p>
