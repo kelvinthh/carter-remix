@@ -82,7 +82,7 @@ export default function Content() {
 
       {/* Highlight block */}
       <div className="flex w-full animate-fade-up flex-col items-center bg-indigo-950/40 pt-8 text-center animate-delay-[800ms] animate-duration-1000 animate-ease-in-out">
-        <h1 className="text-3xl font-bold">
+        <h1 className="max-w-xs text-3xl font-bold sm:max-w-none">
           Fantasies, Immersions, All Yours.
         </h1>
         {/* <h2 className='text-xl font-medium'>Characters Highlight</h2> */}
@@ -118,10 +118,19 @@ export default function Content() {
       {/* Character List block */}
       <div className="flex w-full animate-fade-up flex-col items-center justify-center space-y-4 py-12 animate-delay-[1300ms] animate-duration-700">
         {/* Headings */}
-        <div className="flex flex-col space-y-2 text-center">
-          <h1 className="text-3xl font-bold">Explore The Community.</h1>
+        <div className="flex max-w-xs flex-col space-y-2 text-center sm:max-w-none">
+          <h1 className="text-3xl font-bold">
+            Explore{" "}
+            <span className="animate-pulse bg-gradient-to-r from-orange-500 via-yellow-500 to-red-500 bg-clip-text text-transparent animate-duration-[2500ms]">
+              Characters
+            </span>{" "}
+            & Our Community.
+          </h1>
+          <h2 className="text-xl font-medium sm:text-2xl">
+            Create & Discover 🔥
+          </h2>
           <h3 className="text-sm font-light sm:text-base">
-            Chat, Laugh, Enjoy 🔥
+            Chat, Laugh, Enjoy
           </h3>
         </div>
 
