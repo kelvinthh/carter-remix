@@ -36,7 +36,7 @@ export default function Content() {
 
   return (
     <div
-      className="flex h-screen w-full animate-fade flex-col items-center overflow-y-auto bg-black text-white animate-delay-500"
+      className="flex h-screen w-full animate-fade flex-col items-center overflow-auto bg-black text-white animate-delay-500"
       ref={containerRef}
     >
       {/* Scroll to top button */}
@@ -101,7 +101,7 @@ export default function Content() {
             imageUrl="https://images.gamebanana.com/img/ico/sprays/604a3c40ef0ba.png"
           />
           <HighlightIcon
-            name="Morgan Freeman"
+            name="Morgan The Freeman"
             imageUrl="https://cdn.openart.ai/stable_diffusion/dc55bb7174384bce288d3e4f02cf17dca0222c07_2000x2000.webp"
           />
           <HighlightIcon
@@ -119,7 +119,7 @@ export default function Content() {
       <div className="flex w-full animate-fade-up flex-col items-center justify-center space-y-4 py-12 animate-delay-[1300ms] animate-duration-700">
         {/* Headings */}
         <div className="flex flex-col space-y-2 text-center">
-          <h1 className="text-3xl font-bold">Try It Out Now.</h1>
+          <h1 className="text-3xl font-bold">Explore The Community.</h1>
           <h3 className="text-sm font-light sm:text-base">
             Chat, Laugh, Enjoy 🔥
           </h3>

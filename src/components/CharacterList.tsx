@@ -28,6 +28,9 @@ export default function CharacterList() {
           key={index}
           className="group relative overflow-hidden rounded-2xl transition-all duration-500 ease-in-out hover:z-20 hover:-translate-y-1 hover:scale-[1.025]"
         >
+          <p className="absolute right-2 top-2 rounded-full border border-indigo-700 bg-black bg-opacity-70 px-2 py-1 text-xs font-light opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+            @UserName
+          </p>
           <div className="absolute bottom-0 hidden w-full flex-col items-start justify-center space-y-1 bg-black bg-opacity-70 px-2 py-4 group-hover:flex group-hover:animate-fade">
             <p className="text-lg font-bold">Character Name</p>
             <div className="flex flex-wrap gap-x-2 gap-y-1">
