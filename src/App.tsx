@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Content from "./pages/Content";
+import Content from './pages/Content';
 
 function App() {
   return (
