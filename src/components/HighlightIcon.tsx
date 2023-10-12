@@ -11,7 +11,7 @@ export default function HighlightIcon({
       <div className="absolute bottom-0 hidden w-full flex-col items-start justify-center bg-black bg-opacity-50 p-2 group-hover:flex group-hover:animate-fade group-hover:animate-delay-300">
         <p>{name}</p>
       </div>
-      <img src={imageUrl} title={`${name}`} alt={`Icon of ${name}`} />
+      <img src={imageUrl} title={`${name}`} alt={`Icon of ${name}`} className='self-center h-full w-full object-cover' />
     </div>
   );
 }

@@ -38,7 +38,7 @@ export default function Content() {
     >
       {/* Scroll to top button */}
       <button
-        className={`fixed bottom-8 right-8 z-50 rounded-full bg-violet-700 p-4 opacity-70 drop-shadow transition-all duration-500 hover:scale-110 hover:opacity-100 sm:bottom-16 animate-fade ${
+        className={`fixed bottom-8 right-8 z-50 animate-fade rounded-full bg-violet-700 p-4 opacity-70 drop-shadow transition-all duration-500 hover:scale-110 hover:opacity-100 sm:bottom-16 ${
           !scrollButton && `hidden cursor-default`
         }`}
         onClick={() => {
@@ -90,24 +90,24 @@ export default function Content() {
         </h3>
         <div className="flex min-h-[18rem] w-full flex-col items-center justify-center gap-8 py-8 sm:my-0 sm:flex-row">
           <HighlightIcon
-            name="Gordon Freeman"
+            name="Neutral Gordon Freeman"
             imageUrl="https://combineoverwiki.net/images/thumb/2/2b/Gordon_bust_rtb2.jpg/250px-Gordon_bust_rtb2.jpg"
           />
           <HighlightIcon
+            name="Cursed Gordon Freeman"
+            imageUrl="https://images.gamebanana.com/img/ico/sprays/604a3c40ef0ba.png"
+          />
+          <HighlightIcon
+            name="Morgan Freeman"
+            imageUrl="https://cdn.openart.ai/stable_diffusion/dc55bb7174384bce288d3e4f02cf17dca0222c07_2000x2000.webp"
+          />
+          <HighlightIcon
             name="Chicken at cs_italy"
-            imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDsjyVfzGc3TZqs3kUHKyufOndE_YD6LeHg&usqp=CAU"
+            imageUrl="https://i.ytimg.com/vi/JFyGA2IFRPA/maxresdefault.jpg"
           />
           <HighlightIcon
-            name="The G-Man"
-            imageUrl="https://combineoverwiki.net/images/thumb/8/8d/HLA_G-Man_Cropped.jpg/250px-HLA_G-Man_Cropped.jpg"
-          />
-          <HighlightIcon
-            name="Alyx Vance"
-            imageUrl="https://combineoverwiki.net/images/thumb/f/f5/Alyx_Vance_Portrait.jpg/448px-Alyx_Vance_Portrait.jpg"
-          />
-          <HighlightIcon
-            name="Russel"
-            imageUrl="https://steamuserimages-a.akamaihd.net/ugc/1616185636263315058/993C7910CE3D2284FA9A16375B34178D8954E9D3/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+            name="Linus Drop Tips"
+            imageUrl="https://pbs.twimg.com/media/D7ShRPYXoAA-XXB?format=jpg&name=4096x4096"
           />
         </div>
       </div>

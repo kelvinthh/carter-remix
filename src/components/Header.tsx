@@ -55,7 +55,7 @@ export default function Header() {
           </span>
         </button>
 
-        {/* Icon */}
+        {/* User Icon */}
         <AiOutlineUser
           size="2em"
           title="User"
