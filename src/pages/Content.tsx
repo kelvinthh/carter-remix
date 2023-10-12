@@ -41,7 +41,7 @@ export default function Content() {
     >
       {/* Scroll to top button */}
       <button
-        className={`absolute bottom-8 right-8 z-20 animate-fade rounded-full bg-violet-700 p-4 opacity-50 drop-shadow transition-all duration-500 animate-fill-backwards hover:scale-110 hover:opacity-100 sm:bottom-16 ${
+        className={`fixed bottom-8 right-8 z-20 animate-fade rounded-full bg-violet-700 p-4 opacity-50 drop-shadow transition-all duration-500 animate-fill-backwards hover:scale-110 hover:opacity-100 sm:bottom-16 ${
           !scrollButton && `hidden cursor-default`
         }`}
         onClick={() => {
@@ -148,7 +148,7 @@ export default function Content() {
       </div>
 
       {/* Footer */}
-      <footer className="flex w-full flex-col pb-8">
+      <footer className="flex h-auto w-full flex-col pb-8">
         <div className="mx-6 mb-8 h-[1px] bg-slate-600" />
 
         <div className="flex items-center justify-between px-8">
