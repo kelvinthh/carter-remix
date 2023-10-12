@@ -20,7 +20,7 @@ export default function ImageListBtn({
         <Icon
           size="1.5em"
           title={title}
-          className="text-gray-500 group-hover:text-yellow-400 group-hover:animate-pulse group-hover:animate-infinite group-hover:animate-duration-500"
+          className="text-gray-500 group-hover:animate-pulse group-hover:text-yellow-400 group-hover:animate-duration-500 group-hover:animate-infinite"
         />
       )}
       <p className="whitespace-nowrap">{title}</p>
