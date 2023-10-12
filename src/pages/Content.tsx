@@ -38,7 +38,7 @@ export default function Content() {
     >
       {/* Scroll to top button */}
       <button
-        className={`fixed bottom-8 right-8 z-50 rounded-full bg-violet-700 p-4 opacity-70 drop-shadow transition-all duration-500 hover:scale-110 hover:opacity-100 sm:bottom-16 ${
+        className={`fixed bottom-8 right-8 z-50 rounded-full bg-violet-700 p-4 opacity-70 drop-shadow transition-all duration-500 hover:scale-110 hover:opacity-100 sm:bottom-16 animate-fade ${
           !scrollButton && `hidden cursor-default`
         }`}
         onClick={() => {
