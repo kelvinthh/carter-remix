@@ -153,7 +153,7 @@ export default function Content() {
 
         <div className="flex items-center justify-between px-8">
           <img
-            src="https://www.carter.chat/assets/cartericon-2501c522.png"
+            src="https://avatars.githubusercontent.com/u/122620870?s=200&v=4"
             className="h-10 w-10"
           />
           <a className="text-sm font-light text-slate-600 hover:underline">

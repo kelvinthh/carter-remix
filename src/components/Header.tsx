@@ -15,7 +15,7 @@ export default function Header() {
       {/* Icon */}
       <div className="animate-fade-right animate-delay-200 sm:mb-auto">
         <img
-          src="https://www.carter.chat/assets/cartericon-2501c522.png"
+          src="https://avatars.githubusercontent.com/u/122620870?s=200&v=4"
           className="h-10 w-10 hover:animate-spin"
         />
       </div>
